@@ -1,0 +1,166 @@
+{
+ "bootcamp": {
+  "bootcamp_type_text": "بوت‌کمپ آنلاین همراه با منتورشیپ و پروژه‌ی تیمی",
+  "due_date": "2026-11-24T20:29:59+00:00",
+  "title": "DevOps",
+  "fa_title": "دواپس",
+  "week_duration": "۱۳ هفته",
+  "hour_duration": "۲۸۸ ساعت",
+  "season": "پاییز ۱۴۰۵",
+  "pre_register_min_price": 43000000,
+  "pre_register_max_price": 54000000,
+  "users_can_register": true,
+  "installment_text": "برای تسهیل ثبت‌نام، امکان پیش‌ثبت‌نام فراهم است. همچنین تخفیف ۱۰ درصدی برای افرادی که در بازه پیش‌ثبت‌نام رزومه ارسال کرده‌اند، با ظرفیت محدود ۱۰ نفر در نظر گرفته شده است. تمامی متقاضیانی که تا تاریخ ۱۰ آبان‌ماه ثبت‌نام خود را نهایی کنند نیز، می‌توانند به محتوای ویدیویی Airflow به ارزش ۱۲ میلیون توم",
+  "start_date_time": "2026-11-26T06:30:00+00:00",
+  "requirements": [
+   {
+    "id": "313",
+    "name": "آشنایی با یک زبان برنامه‌نویسی و مفاهیم پایه وب",
+    "description": "برای شروع دواپس نیازمند آشنایی با حداقل یک زبان برنامه‌نویسی و مفاهیم پایه وب مثل HTTP، API، سرور و کلاینت هستید.",
+    "icon": "/media/public/college/bootcamp/icons/c0e7fe1abcf14dc1bc00b3334959cf9d..png"
+   },
+   {
+    "id": "315",
+    "name": "اختصاص زمان مناسب",
+    "description": "برای گرفتن نتیجه از این بوت‌کمپ باید به اندازه یک کار پاره وقت یعنی به طور متوسط ۲۰ الی ۲۵ ساعت در طول هفته زمان بگذارید.",
+    "icon": "/media/public/college/bootcamp/icons/57175915c4b64b0f9f2c81746e8b3c64..png"
+   },
+   {
+    "id": "316",
+    "name": "علاقه به کار تیمی",
+    "description": "برای انجام پروژه‌ها و طی کردن روند یادگیری نیازمند تعامل با افراد گروه و کار تیمی هستید.",
+    "icon": "/media/public/college/bootcamp/icons/443241f7a25e42578ddcd4a7b0a3e155..png"
+   }
+  ],
+  "topic_items": [
+   {
+    "id": "379",
+    "date_title": "‌",
+    "week_title": "هفته اول",
+    "main_topic": "DevOps & Linux Foundations",
+    "titles": [
+     {
+      "id": "1677",
+      "title": "DevOps Fundamentals"
+     },
+     {
+      "id": "1678",
+      "title": "Software Delivery Lifecycle"
+     },
+     {
+      "id": "1679",
+      "title": "Development, Staging, and Production"
+     },
+     {
+      "id": "1680",
+      "title": "Linux and Terminal Basics"
+     },
+     {
+      "id": "1681",
+      "title": "Filesystem and Package Management"
+     },
+     {
+      "id": "1682",
+      "title": "Linux Administration"
+     },
+     {
+      "id": "2085",
+      "title": "Users, Groups, and Permissions"
+     },
+     {
+      "id": "2086",
+      "title": "Processes and Signals"
+     },
+     {
+      "id": "2087",
+      "title": "Pipes and Redirection"
+     },
+     {
+      "id": "2088",
+      "title": "Logs and System Resources"
+     }
+    ],
+    "teachers": []
+   },
+   {
+    "id": "380",
+    "date_title": "‌",
+    "week_title": "هفته دوم",
+    "main_topic": "Networking & Server Foundations",
+    "titles": [
+     {
+      "id": "1683",
+      "title": "Networking Fundamentals"
+     },
+     {
+      "id": "1684",
+      "title": "IP Addresses and Subnetting Basics"
+     },
+     {
+      "id": "1685",
+      "title": "Ports, TCP, and UDP"
+     },
+     {
+      "id": "1686",
+      "title": "DNS"
+     },
+     {
+      "id": "1687",
+      "title": "HTTP and HTTPS"
+     },
+     {
+      "id": "1688",
+      "title": "Server Setup"
+     },
+     {
+      "id": "2089",
+      "title": "SSH and Key Authentication"
+     },
+     {
+      "id": "2090",
+      "title": "Firewalls"
+     },
+     {
+      "id": "2091",
+      "title": "Nginx and Reverse Proxy"
+     },
+     {
+      "id": "2092",
+      "title": "Domains and TLS Certificates"
+     },
+     {
+      "id": "2093",
+      "title": "Network Troubleshooting"
+     }
+    ],
+    "teachers": []
+   }
+  ],
+  "long_description": "بوت‌کمپ دواپس دلتا با آموزش مبانی سیستم‌عامل لینوکس، شبکه، Git و مفاهیم پایه زیرساخت آغاز می‌شود. سپس شرکت‌کنندگان با فناوری‌های کانتینرسازی و ارکستراسیون مانند Docker و Kubernetes آشنا شده و در ادامه به مباحث کلیدی اتوماسیون، زیرساخت به‌عنوان کد (Infrastructure as Code)، مدیریت پیکربندی، یکپارچه‌سا",
+  "bootcamp_base_price": 55900000,
+  "bootcamp_payable_price": 49192000,
+  "available_capacity": 28,
+  "faq_items": [
+   {
+    "id": "2325",
+    "question": "ساعت برگزاری کلاس به چه صورت است؟",
+    "answer": "کلاس‌های آنلاین این بوت‌کمپ در روزهای پنجشنبه و جمعه، در ساعات ۱۰ الی ۱۱:۳۰ و ۱۲ الی ۱۳:۳۰  و ۱۴ تا ۱۵:۳۰ برگزار می‌شود."
+   },
+   {
+    "id": "2328",
+    "question": "مزایای پیش ثبت نام بوت‌کمپ چیست؟",
+    "answer": "برای تسهیل ثبت‌نام، امکان پیش‌ثبت‌نام فراهم است. همچنین تخفیف ۱۰ درصدی برای افرادی که در بازه پیش‌ثبت‌نام رزومه ارسال کرده‌اند، با ظرفیت محدود ۱۰ نفر در نظر گرفته شده است. تمامی متقاضیانی که تا تاریخ ۱۰ آبان‌ماه ثبت‌نام خود را نهایی کنند نیز، می‌توانند به محتوای ویدیویی Airflow به ارزش ۱۲ میلیون تومان به‌صورت رایگان دسترسی داشته باشند."
+   }
+  ],
+  "teachers": [
+   {
+    "name": "ایمان ابره‌دری",
+    "job": "Senior Site Reliability Engineer at MyDigipay"
+   },
+   {
+    "name": "امیر بشیری",
+    "job": "Data Engineering Manager at Snappfood"
+   }
+  ]
+ }
+}

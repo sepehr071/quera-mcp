@@ -1,0 +1,199 @@
+{
+ "problems": {
+  "filterChoices": {
+   "initial": [
+    {
+     "fieldName": "type",
+     "choices": [
+      {
+       "label": "داوری",
+       "value": "J",
+       "tag_text": null
+      },
+      {
+       "label": "فقط کامپایل",
+       "value": "C",
+       "tag_text": null
+      },
+      {
+       "label": "فقط آپلود",
+       "value": "U",
+       "tag_text": null
+      },
+      {
+       "label": "داوری پروژه",
+       "value": "PJ",
+       "tag_text": null
+      }
+     ]
+    },
+    {
+     "fieldName": "order",
+     "choices": [
+      {
+       "label": "جدیدترین",
+       "value": "new",
+       "tag_text": null
+      },
+      {
+       "label": "قدیمی‌ترین",
+       "value": "old",
+       "tag_text": null
+      },
+      {
+       "label": "بیشترین حل",
+       "value": "most-solutions",
+       "tag_text": null
+      },
+      {
+       "label": "کمترین حل",
+       "value": "least-solutions",
+       "tag_text": null
+      }
+     ]
+    },
+    {
+     "fieldName": "difficulty",
+     "choices": [
+      {
+       "label": "-",
+       "value": "UNK",
+       "tag_text": null
+      },
+      {
+       "label": "ساده",
+       "value": "EZ",
+       "tag_text": null
+      },
+      {
+       "label": "متوسط",
+       "value": "MED",
+       "tag_text": null
+      },
+      {
+       "label": "سخت",
+       "value": "HARD",
+       "tag_text": null
+      }
+     ]
+    },
+    {
+     "fieldName": "solved",
+     "choices": [
+      {
+       "label": "حل کامل",
+       "value": "full",
+       "tag_text": null
+      },
+      {
+       "label": "حل ناتمام",
+       "value": "partial",
+       "tag_text": null
+      },
+      {
+       "label": "بدون تلاش",
+       "value": "no-try",
+       "tag_text": null
+      }
+     ]
+    },
+    {
+     "fieldName": "tag",
+     "choices": [
+      {
+       "label": "Android",
+       "value": "android",
+       "tag_text": null
+      },
+      {
+       "label": "#C",
+       "value": "c-sharp",
+       "tag_text": null
+      },
+      {
+       "label": "C",
+       "value": "c",
+       "tag_text": null
+      },
+      {
+       "label": "DevOps",
+       "value": "devops",
+       "tag_text": null
+      }
+     ]
+    },
+    {
+     "fieldName": "category",
+     "choices": [
+      {
+       "label": "تکنولوژی",
+       "value": "technology",
+       "tag_text": null
+      },
+      {
+       "label": "مسابقه",
+       "value": "contest",
+       "tag_text": null
+      },
+      {
+       "label": "دانشگاهی",
+       "value": "university",
+       "tag_text": null
+      },
+      {
+       "label": "المپیاد",
+       "value": "olympiad",
+       "tag_text": null
+      }
+     ]
+    },
+    {
+     "fieldName": "contest",
+     "choices": [
+      {
+       "label": "مسابقه Algobattle#1",
+       "value": "28542",
+       "tag_text": null
+      },
+      {
+       "label": "مسابقه الگوریتمی خداحافظ ۱۴۰۴",
+       "value": "27525",
+       "tag_text": null
+      },
+      {
+       "label": "مسابقه هوش مصنوعی Novatech",
+       "value": "26935",
+       "tag_text": null
+      },
+      {
+       "label": "مسابقه مهندسی نرم‌افزار Novatech",
+       "value": "26934",
+       "tag_text": null
+      }
+     ]
+    },
+    {
+     "fieldName": "difficulty",
+     "choices": [
+      {
+       "label": "ساده",
+       "value": "EZ",
+       "tag_text": null
+      },
+      {
+       "label": "متوسط",
+       "value": "MED",
+       "tag_text": null
+      },
+      {
+       "label": "سخت",
+       "value": "HARD",
+       "tag_text": null
+      }
+     ]
+    }
+   ],
+   "selected": []
+  }
+ }
+}
