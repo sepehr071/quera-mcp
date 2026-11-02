@@ -165,6 +165,7 @@ async def _city_id(city: str) -> str:
     raise ApiError("City filter not found.")
 
 
+Level = Literal["intern", "junior", "mid", "senior", "lead"]
 Page = Annotated[int, Field(ge=1, le=100, description="Page number, from 1.")]
 
 
@@ -172,7 +173,7 @@ Page = Annotated[int, Field(ge=1, le=100, description="Page number, from 1.")]
 async def qr_jobs(
     search: Annotated[str | None, Field(description="Words to look for, e.g. 'django', 'devops', 'فرانت'.")] = None,
     level: Annotated[
-        list[Literal["intern", "junior", "mid", "senior", "lead"]] | None,
+        list[Level] | Level | None,
         Field(description="Seniority; several mean any of them."),
     ] = None,
     remote: Annotated[bool | None, Field(description="true = only jobs that offer remote work.")] = None,
@@ -180,7 +181,7 @@ async def qr_jobs(
         str | None, Field(description="City name (Persian, e.g. 'تهران', 'اصفهان') or id. See qr_job_filters.")
     ] = None,
     technologies: Annotated[
-        list[str] | None,
+        list[str] | str | None,
         Field(description="Tech codes such as 'python', 'react', 'docker', 'go'; several mean any of them."),
     ] = None,
     job_type: Annotated[
@@ -204,7 +205,7 @@ async def qr_jobs(
     """
     q: dict[str, Any] = {
         "search": search,
-        "level": [LEVELS[x] for x in level or []],
+        "level": [LEVELS[x] for x in ([level] if isinstance(level, str) else level or [])],
         "city": await _city_id(city) if city else None,
         "technologies": _techs(technologies),
         "collaboration_type": job_type,
@@ -287,7 +288,9 @@ async def qr_companies(
     search: Annotated[str | None, Field(description="Company name words, Persian or English.")] = None,
     industry: Annotated[str | None, Field(description="Industry id from qr_job_filters.")] = None,
     city: Annotated[str | None, Field(description="City name or id, as for qr_jobs.")] = None,
-    technologies: Annotated[list[str] | None, Field(description="Tech codes the company uses, e.g. 'python'.")] = None,
+    technologies: Annotated[
+        list[str] | str | None, Field(description="Tech codes the company uses, e.g. 'python'.")
+    ] = None,
     size: Annotated[
         Literal["1-10", "11-50", "51-200", "201-500", "501-1000", "1001-5000", "5001-10000", "10000+"] | None,
         Field(description="Employee count range."),
@@ -474,12 +477,10 @@ async def qr_courses(
 @tool("Quera job salaries")
 async def qr_salaries(
     technologies: Annotated[
-        list[str] | None, Field(description="Tech codes, e.g. 'python'; several mean any of them.")
+        list[str] | str | None, Field(description="Tech codes, e.g. 'python'; several mean any of them.")
     ] = None,
     city: Annotated[str | None, Field(description="City name or id, as for qr_jobs.")] = None,
-    level: Annotated[
-        list[Literal["intern", "junior", "mid", "senior", "lead"]] | None, Field(description="Seniority filter.")
-    ] = None,
+    level: Annotated[list[Level] | Level | None, Field(description="Seniority filter.")] = None,
 ) -> dict:
     """Summarize the salaries employers published in open Quera jobs, grouped by seniority level (Toman per month).
 
@@ -490,7 +491,7 @@ async def qr_salaries(
     q = {
         "technologies": _techs(technologies),
         "city": await _city_id(city) if city else None,
-        "level": [LEVELS[x] for x in level or []],
+        "level": [LEVELS[x] for x in ([level] if isinstance(level, str) else level or [])],
     }
     nodes: list[dict] = []
     for n in range(1, 7):  # shortcut: 90 jobs max, more than the board holds

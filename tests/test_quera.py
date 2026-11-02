@@ -173,6 +173,13 @@ async def test_new_filter_params(client, api):
     assert api.calls[-1].url.params["contest"] == "28542"
 
 
+async def test_list_params_accept_a_single_string(client, api):
+    api["magnet/jobs"] = {"jobs": {"edges": [], "totalCount": 0}}
+    await client.call_tool("qr_jobs", {"level": "junior", "technologies": "python"})
+    q = api.calls[-1].url.params
+    assert q.get_list("level") == ["junior"] and q.get_list("technologies") == ["python"]
+
+
 async def test_salaries_group_by_level(client, api):
     page = fixture("jobs.json")
     page["jobs"]["totalCount"] = 3
