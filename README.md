@@ -66,7 +66,7 @@ Claude Desktop, Cursor and other clients:
 
 | Tool | What it does |
 |---|---|
-| `qr_jobs` | Search open tech jobs (15 per page) with filters |
+| `qr_jobs` | Search open tech jobs (15 per page) with filters; list filters such as `level` and `technologies` take one value or a list |
 | `qr_job` | One posting in full |
 | `qr_job_filters` | Cities, industries, company sizes and popular tech codes the filters accept |
 | `qr_companies` | Search company profiles |
